@@ -11,7 +11,7 @@ And we'll be creating a star-schema database like this:\
 
 
 ## Tech Stack
-Entire project was done using Microsoft Fabric*:
+Entire project was done using Microsoft Fabric. The following subcomponents were used:
 
 - **Storage**
   - Lakehouse
@@ -20,15 +20,13 @@ Entire project was done using Microsoft Fabric*:
 - **Orchestration**
   - Data Pipeline
 
-*Microsoft is heavily investing in Fabric, and eventually most companies using Azure will have to migrate their pipelines to this one-stop-shop (or, at least, create new pipelines there).
-
 ## Architecture
 <img src="images/architecture.png" alt="drawing" width="500"/>
 
 
 ## Fabric Data Pipeline
 <img src="images/pipeline.png" alt="drawing" width="900"/>\
-*had some issues with running "Delete data" task. That's why I created two separate "Delete data" tasks.
+(I had some issues with running the `Delete data` task. That's why I created two separate `Delete data` tasks.)
 
 ## Notebook
 We're doing these transformations in the notebook:
@@ -47,8 +45,3 @@ Full notebook available in the `./notebooks/` folder.
 
 ## Usage/Testing
 - To test this notebook and verify how it treats appends, you may use `./sample_data` which I prepared.
-
-## Contact
-For any questions or inquiries, please contact me at bernasiakk@gmail.com
-
-Thanks for reading!
